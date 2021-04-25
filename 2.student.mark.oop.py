@@ -23,13 +23,6 @@ class information(Student):
         print("Id:" + self.id)
         print("Dob:" + self.dob)
 
-
-son = information("Luong Nguyen Viet Son", "Bi10-156", "28/01/2001")
-nam = information("Nguyen Hoang Nam", "BI10-123", "06/01/2001")
-
-son.showinfo()
-nam.showinfo()
-
 from Student import Student
 class Course(Student):
     def __init__ (self,name, coursename, courseid, coursescore):
@@ -47,6 +40,3 @@ class Course(Student):
             print("this student fails " + self.coursename + "with the final score is " +str(self.coursescore) )
         else:
             print("this student passes " + self.coursename + "with the final score is " +str(self.coursescore))
-son = Course("Luong Nguyen Viet Son","Advance Programming With Python ", "PYTHON","15")
-son.showinfo()
-son.passornot()
