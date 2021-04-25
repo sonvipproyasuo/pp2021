@@ -57,7 +57,6 @@ class GPA(Student):
         for i in range (n):
             x = int(input("Enter the next score"))
             a.append(x)
-        print(a)
 
         gpa = str(numpy.mean(a))
         print(self.name + "'s GPA is " + gpa)
