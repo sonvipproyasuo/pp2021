@@ -25,9 +25,10 @@ def coursecounting():
 
 def courseinformation():
     print("enter course info")
-    coursename = input("coursename:")
-    courseid = input("courseid:")
-    a = {"coursename": coursename, "courseid": courseid}
+    coursename = input("course name:")
+    courseid = input("course id:")
+    coursescore = input("course score :")
+    a = {"course name": coursename, "course id": courseid, "course score": coursescore}
     return a
 
 def listcourse(course):
